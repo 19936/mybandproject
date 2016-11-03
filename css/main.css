@@ -1,0 +1,590 @@
+@font-face {
+    font-family: Code;
+    src: url(CODEBold.otf);
+}
+@font-face {
+    font-family: Ajax;
+    src: url(sportsjersey.ttf);
+}
+
+body {
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    background-color: black;
+}
+
+/* NAVIGATIE EN BANNER */
+
+.banner {
+    position: relative;
+    height:150px;
+    width: 100%;
+    overflow: hidden; 
+ }
+
+#bannerimg {
+    z-index: 1;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    overflow: hidden;
+}
+
+#bannerh1 {
+    z-index: 2;
+    position: absolute;
+    top: 35%;
+    color: white;
+    text-shadow:
+    -5px -1px 0 #000,
+    1px -1px 0 #000,
+    -5px 1px 0 #000,
+    1px 1px 0 #000;
+    left: 0;
+    right: 0;
+    font-size: 80px;
+    width: 100%;
+    height: 26px;
+    padding: 0;
+    margin: 0;
+    margin-top: -13px;
+    text-align: center;
+    font-family: Code; 
+}
+
+nav {
+    height: 200px;
+}
+
+.logo {
+    float: left;
+    position: absolute;
+    width: 30%;
+    margin-left: 18px;
+}
+
+.logo img {
+    width: 100%;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    list-style-type: none;
+    width: 100%;
+    float: right;
+    
+}
+
+nav ul li {
+    float: right;
+    font-family: Mooi;
+    width: 160px;
+    height: 60px;
+    font-size: 22px;
+}
+
+nav ul li a {
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Code;
+    color: white;
+    text-align: center;
+    line-height: 65px;
+    text-decoration: none;
+}
+
+nav ul li:hover{
+    color: gray;
+    cursor: pointer;
+}
+
+nav ul li:hover a {
+    color: gray;
+    cursor: pointer;
+}
+
+nav ul li:hover {
+    cursor: pointer;
+}
+
+/* SIDEBAR EN CONTENT */
+
+.side_content {
+    height: 1600px;
+}
+
+.side_contentschema {
+    height: 1360px;
+}
+
+.side_contentabout {
+    height: 800px;
+}
+
+.side_contentteam {
+    height: 1710px;
+}
+
+/* SIDEBAR */
+
+.sidebar {
+    width: 15%;
+    height: 100%;
+    float: left;
+    background-color: black;
+}
+
+.sidebar form {
+    font-family: Code;
+    font-size: 20px;
+    margin-top: 170px;
+    width: 70%;
+    color: white;
+    margin-left: 10px;
+}
+
+.sidebar form input{
+    width: 100%;
+}
+
+#txtHint {
+    color: white;
+}
+
+#txtHint a {
+
+}
+
+table {
+    margin-left: 10px;
+    border: none;
+    width: 80%;
+    border-collapse: collapse;
+    color: white;
+}
+
+table a{
+    text-decoration: none;
+    font-family: Code;
+    font-size: 14px;
+    color: white;
+}
+
+table a:hover{
+    color: red;
+}
+
+ table, td, th {
+    border: 2px solid white;
+    color: white;
+    padding: 5px;
+    width: 80%;
+    font-family: Code;
+}
+
+th {
+    text-align: left;
+    color: white;
+}
+
+.searchresult {
+    color: white;
+}
+
+/* PAGENATION */
+
+.pagenation {
+    height: 40px;
+    margin-top: 40px;
+}
+
+
+.pagenation ul {
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    width: 200px;
+    list-style-type: none;
+    
+}
+
+.pagenation ul li {
+    float: left;
+    font-family: Mooi;
+    width: 50px;
+    height: 30px;
+    font-size: 22px;
+    
+}
+
+.pagenation ul li a {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30px;;
+    height: 100%;
+    font-family: Code;
+    background-color: black;
+    color: white;
+    text-align: center;
+    line-height: 35px;
+    text-decoration: none;
+    border-radius: 8px 8px 8px 8px;
+-moz-border-radius: 8px 8px 8px 8px;
+-webkit-border-radius: 8px 8px 8px 8px;
+border: 0px groove #000000;
+}
+
+.pagenation ul li:hover{
+    color: gray;
+    cursor: pointer;
+}
+
+.pagenation ul li:hover a {
+    color: gray;
+    cursor: pointer;
+}
+
+.pagenation ul li:hover {
+    cursor: pointer;
+}
+
+.pagenation ul li a.active {
+    color: red;
+}
+
+/* NEWSARTICLES */
+
+.newsarticles {
+    width: 85%;
+    height: 100%;
+    float: right;
+    background-image: url("../images/ajaxbanner.png");
+    -webkit-box-shadow: inset 1px 0px 150px 10px rgba(255,0,0,1);
+    -moz-box-shadow: inset 1px 0px 150px 10px rgba(255,0,0,1);
+    box-shadow: inset 1px 0px 150px 10px rgba(255,0,0,1);
+    border-radius: 59px 0px 0px 60px;
+    -moz-border-radius: 59px 0px 0px 60px;
+    -webkit-border-radius: 59px 0px 0px 60px;
+    border: 0px solid #000000;
+}
+
+.berichtenschema {
+    border-radius: 42px 42px 42px 42px;
+    -moz-border-radius: 42px 42px 42px 42px;
+    -webkit-border-radius: 42px 42px 42px 42px;
+    border: 2px solid #000000;
+    margin-left: 35px;
+    margin-right: 35px;
+    margin-top: 35px;
+    height: 1280px;
+    background-color: aliceblue;
+}
+
+.berichten {
+    border-radius: 42px 42px 42px 42px;
+    -moz-border-radius: 42px 42px 42px 42px;
+    -webkit-border-radius: 42px 42px 42px 42px;
+    border: 2px solid #000000;
+    margin-left: 35px;
+    margin-right: 35px;
+    margin-top: 35px;
+    height: 1520px;
+    background-color: aliceblue;
+}
+
+.berichtenabout {
+    border-radius: 42px 42px 42px 42px;
+    -moz-border-radius: 42px 42px 42px 42px;
+    -webkit-border-radius: 42px 42px 42px 42px;
+    border: 2px solid #000000;
+    margin-left: 35px;
+    margin-right: 35px;
+    margin-top: 35px;
+    height: 740px;
+    background-color: aliceblue;
+}
+
+.berichtenteam{
+    border-radius: 42px 42px 42px 42px;
+    -moz-border-radius: 42px 42px 42px 42px;
+    -webkit-border-radius: 42px 42px 42px 42px;
+    border: 2px solid #000000;
+    margin-left: 35px;
+    margin-right: 35px;
+    margin-top: 35px;
+    height: 1630px;
+    background-color: aliceblue;
+}
+
+/* TABLE SCHEMA */
+
+#schematitel {
+    width: 70%;
+    color: black;
+    background-color: white;
+    border: 5px solid black;
+    -webkit-box-shadow: 1px 1px 61px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 1px 61px 0px rgba(0,0,0,0.75);
+    box-shadow: 1px 1px 61px 0px rgba(0,0,0,0.75);
+    text-align: center;
+    font-family: Code;
+    font-size: 50px;  
+    margin:  0 auto ;
+    margin-top: 40px;
+}
+
+#schematable { 
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 50%;
+}
+
+#schematable p { 
+    margin: 0;
+}
+
+.datum  {
+    border-top: 5px solid black;
+    border-left: 5px solid black;
+    border-right: 5px solid black;
+    font-size: 20px;
+    background-color: red;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    font-family: Code;
+}
+
+.wedstrijd {
+    -webkit-box-shadow: 1px 1px 61px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 1px 61px 0px rgba(0,0,0,0.75);
+    box-shadow: 1px 1px 61px 0px rgba(0,0,0,0.75);
+    font-family: Code;
+    margin-bottom: 20px;
+}
+
+.wedstrijdinfo {
+    background-color: white;
+    font-size: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    border-bottom: 5px solid black;
+    border-left: 5px solid black;
+    border-right: 5px solid black;
+    text-align: center;
+}
+
+/* TABLE TEAM */
+
+#schematitel {
+    width: 70%;
+    color: black;
+    background-color: white;
+    border: 5px solid black;
+    -webkit-box-shadow: 1px 1px 61px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 1px 61px 0px rgba(0,0,0,0.75);
+    box-shadow: 1px 1px 61px 0px rgba(0,0,0,0.75);
+    text-align: center;
+    font-family: Code;
+    font-size: 50px;  
+    margin:  0 auto ;
+    margin-top: 40px;
+}
+
+#teamtable { 
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 80%;
+    max-width: 750px;
+}
+
+#teamtable p { 
+    margin: 0;
+}
+
+.spelerhead  {
+    border-top: 5px solid black;
+    border-left: 5px solid black;
+    border-right: 5px solid black;
+    font-size: 20px;
+    background-color: red;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    font-family: Code;
+}
+
+.spelerhead img {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 158px 158px 158px 158px;
+    -moz-border-radius: 158px 158px 158px 158px;
+    -webkit-border-radius: 158px 158px 158px 158px;
+    border: 0px solid #000000;
+    -webkit-box-shadow: 1px 1px 14px 9px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 1px 14px 9px rgba(0,0,0,0.75);
+    box-shadow: 1px 1px 14px 9px rgba(0,0,0,0.75);
+}
+
+.speler {
+    -webkit-box-shadow: 1px 1px 61px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 1px 61px 0px rgba(0,0,0,0.75);
+    box-shadow: 1px 1px 61px 0px rgba(0,0,0,0.75);
+    font-family: Code;
+    margin-bottom: 20px;
+}
+
+.spelerinfo {
+    background-color: white;
+    font-size: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-bottom: 5px solid black;
+    border-left: 5px solid black;
+    border-right: 5px solid black;
+    text-align: center;
+}
+
+/* TABLE TEAM */
+
+#tablenewsh1 {
+    width: 70%;
+    color: black;
+    background-color: white;
+    border: 5px solid black;
+    -webkit-box-shadow: 1px 1px 61px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 1px 61px 0px rgba(0,0,0,0.75);
+    box-shadow: 1px 1px 61px 0px rgba(0,0,0,0.75);
+    text-align: center;
+    font-family: Code;
+    font-size: 50px;  
+    margin:  0 auto ;
+    margin-top: 40px;
+}
+
+.tablenews {
+    width: 70%;
+    margin-left: 40px;
+    margin-right: 40px;
+     
+}
+
+.tablenews2 {
+    margin-left: 40px;
+    
+    
+}
+
+.tablenews h1{
+    padding-top: 20px;
+    margin-top: 40px;
+    font-family: Code;
+    font-size: 30px;
+}
+
+.tablenews p{
+    padding-bottom: 20px;
+    font-family: Code;
+}
+
+.tablenews img{
+    width: 400px;
+}
+
+/* FOOTER */
+
+footer {
+    margin-top: 10px;
+    position: relative;
+    width: 100%;
+    background-color: black;
+    height: 50px;
+}
+
+#footertext h3 {
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+    color: white;
+    font-size: 17px;
+    float: right;
+    font-family: Code;
+}
+
+#footertext {
+    margin-right: 30px;
+}
+
+
+/* ABOUT */
+
+.abouttable form {
+    margin-left: 30px;
+    margin-top: 100px;
+}
+
+.abouttable h1{
+    -webkit-box-shadow: 1px 1px 61px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 1px 61px 0px rgba(0,0,0,0.75);
+    box-shadow: 1px 1px 61px 0px rgba(0,0,0,0.75);
+    color: black;
+    font-size: 50px;
+    font-family: Code;
+    text-align: center;
+    width: 80%;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid black;
+    background-color: white;
+    
+}
+
+#aboutimg {
+    width: 80%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#aboutimg img{
+    width: 100%;
+}
+
+.abouttable p {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 60%;
+    color: black;
+    font-family: Code;
+}
+
+/* OVERIGE */
+
+.desc {
+
+	background-color: #fff;
+	border: 1px solid #000;
+	position: absolute;
+	margin-left: 100px;
+	margin-top: -20px;
+	width: 200px;
+		
+}
