@@ -2,7 +2,7 @@
 
 $q = ($_GET['q']);
 
- $con = mysqli_connect('localhost','mybandwesly','wesjor','MyBand');
+ $con = mysqli_connect('localhost','mybandwesly','','MyBand');
  if (!$con) {
      die('Could not connect: ' . mysqli_error($con));
  }
