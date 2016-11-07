@@ -13,7 +13,7 @@ setlocale(LC_ALL, 'nl_NL');
 define('DB_HOST','localhost');
 define('DB_NAME','MyBand');
 define('DB_USERNAME','mybandwesly');
-define('DB_PASSWORD','wesjor');
+define('DB_PASSWORD','');
 
 define('ITEMS_PER_NEWSPAGE',2);
 define('ITEMS_PER_SCHEMAPAGE',7);
