@@ -2,7 +2,7 @@
 <?php
 $servername = "localhost"; 
 $username = "mybandwesly";
-$password = "wesjor";
+$password = "";
 $dbname = "MyBand";
 
 
